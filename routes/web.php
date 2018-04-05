@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::resource('city', 'APIController');
+Route::get('/' , 'APIController@index');
